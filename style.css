@@ -1,0 +1,151 @@
+*{
+    font-family: Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: white;
+}
+
+.main{
+    margin: auto;
+    width: 85%;
+    padding: 1rem;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header h1{
+    font-size: clamp(1.8rem, 6vw, 2rem);
+    padding-block: 0.5rem;
+}
+
+.info{
+    font-size: clamp(0.8rem, 5vw, 0.98rem);
+    color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+
+.input-form{
+    width: 90%;
+    padding: 0.5rem;
+}
+
+.section-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.name,
+.country,
+.ingredient-field,
+.instructions-field{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 0.6rem;
+}
+
+.name label,
+.country label,
+.ingredient-field label,
+.instructions-field label{
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: rgba(0, 0, 0, 1);
+}
+
+.name input,
+.country input,
+.ingredient-field input,
+.instructions input,
+.instructions-field input{
+    padding: 0.6em 0.4em;
+    width: 90%;
+    outline: none;
+    border: solid 1.5px rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 0.9rem;
+}
+
+.ingredients ul,
+.instructions-display ul{
+    list-style: none;
+    padding-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.ingredients ul li,
+.instructions-display ul li{
+    font-size: 0.98rem;
+}
+
+.method-heading h2{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding-bottom: 0.88rem;
+    text-align: center;
+}
+
+.section-four{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.section-four button{
+    padding: 0.6rem 1rem;
+    width: 90%;
+    max-width: 250px;
+    margin: auto;
+    background: white;
+    outline: none;
+    border: 1.5px solid rgba(0, 0, 0, 0.6);
+    font-size: 0.9rem;
+    background: rgb(252, 248, 248);
+}
+
+.section-four button:hover{
+    background: rgb(190, 186, 186);
+    color: white;
+}
+
+@media (width > 560px){
+    .section-one{
+        flex-direction: row;
+    }
+
+    
+    .ingredient-field input,
+    .instructions input,
+    .instructions-field input{
+        width: 95%;
+    }
+
+    .method-heading h2{
+        font-size: 1.5rem;
+    }
+}
